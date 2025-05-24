@@ -60,7 +60,7 @@ public class Simulador
         visao.definirCor(Raposa.class, Color.BLUE);
         visoes.add(visao);
 
-        visao = new VisaoDeGrafico(500, 150, 500);
+        visao = new VisaoDeGrafico(800, 400, 500);
         visao.definirCor(Coelho.class, Color.BLACK);
         visao.definirCor(Raposa.class, Color.RED);
         visoes.add(visao);
