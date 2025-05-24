@@ -1,7 +1,5 @@
 import java.util.HashMap;
 
-import org.w3c.dom.css.Counter;
-
 /**
  * Esta classe coleta e fornece alguns dados estatísticos sobre o estado 
  * de um campo. É flexível: cria e mantém um contador para qualquer classe 
