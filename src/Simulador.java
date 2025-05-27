@@ -1,8 +1,6 @@
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.awt.Color;
-
 /**
  * Um simulador simples de predador-presa, baseado em um campo retangular contendo 
  * coelhos e raposas.
@@ -56,13 +54,11 @@ public class Simulador
         visoes = new ArrayList<>();
         
         VisaoSimulador visao = new VisaoDeGrade(comprimento, largura, this);
-        visao.definirCor(Coelho.class, Color.ORANGE);
-        visao.definirCor(Raposa.class, Color.BLUE);
+        GeradorDePopulacoes.definirCores(visao);
         visoes.add(visao);
 
         visao = new VisaoDeGrafico(800, 400, 500);
-        visao.definirCor(Coelho.class, Color.BLACK);
-        visao.definirCor(Raposa.class, Color.RED);
+        GeradorDePopulacoes.definirCores(visao);
         visoes.add(visao);
         
         // Configura um ponto de partida válido.
@@ -92,7 +88,6 @@ public class Simulador
                 pausar(atraso);   
             }
         }
-        atualizarVisoes();
         reabilitarOpcoesVisoes();
     }
     
